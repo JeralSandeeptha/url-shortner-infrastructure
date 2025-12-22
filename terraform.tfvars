@@ -1,0 +1,1 @@
+eks_admin_principal_arn = "arn:aws:iam::108772197183:root"
