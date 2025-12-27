@@ -25,9 +25,9 @@ resource "aws_subnet" "url_shortner_public_subnet_01" {
   availability_zone       = "us-east-1a"
 
   tags = {
-    Name                                 = "URL_Shortner_Public_Subnet_01"
-    "kubernetes.io/cluster/url-shortner" = "shared"
-    "kubernetes.io/role/elb"             = "1"
+    Name                                             = "URL_Shortner_Public_Subnet_01"
+    "kubernetes.io/cluster/URL_Shortner_EKS_Cluster" = "shared"
+    "kubernetes.io/role/elb"                         = "1"
   }
 }
 resource "aws_subnet" "url_shortner_private_subnet_01" {
@@ -36,9 +36,9 @@ resource "aws_subnet" "url_shortner_private_subnet_01" {
   availability_zone = "us-east-1a"
 
   tags = {
-    Name                                 = "URL_Shortner_Private_Subnet_01"
-    "kubernetes.io/cluster/url-shortner" = "shared"
-    "kubernetes.io/role/internal-elb"    = "1"
+    Name                                             = "URL_Shortner_Private_Subnet_01"
+    "kubernetes.io/cluster/URL_Shortner_EKS_Cluster" = "shared"
+    "kubernetes.io/role/internal-elb"                = "1"
   }
 }
 
@@ -51,9 +51,9 @@ resource "aws_subnet" "url_shortner_public_subnet_02" {
   availability_zone       = "us-east-1b"
 
   tags = {
-    Name                                 = "URL_Shortner_Public_Subnet_02"
-    "kubernetes.io/cluster/url-shortner" = "shared"
-    "kubernetes.io/role/elb"             = "1"
+    Name                                             = "URL_Shortner_Public_Subnet_02"
+    "kubernetes.io/cluster/URL_Shortner_EKS_Cluster" = "shared"
+    "kubernetes.io/role/elb"                         = "1"
   }
 }
 resource "aws_subnet" "url_shortner_private_subnet_02" {
@@ -62,9 +62,9 @@ resource "aws_subnet" "url_shortner_private_subnet_02" {
   availability_zone = "us-east-1b"
 
   tags = {
-    Name                                 = "URL_Shortner_Private_Subnet_02"
-    "kubernetes.io/cluster/url-shortner" = "shared"
-    "kubernetes.io/role/internal-elb"    = "1"
+    Name                                             = "URL_Shortner_Private_Subnet_02"
+    "kubernetes.io/cluster/URL_Shortner_EKS_Cluster" = "shared"
+    "kubernetes.io/role/internal-elb"                = "1"
   }
 }
 
