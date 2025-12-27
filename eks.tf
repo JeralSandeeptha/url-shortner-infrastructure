@@ -11,7 +11,7 @@ resource "aws_eks_cluster" "url_shortner_eks_cluster" {
   }
 
   role_arn = aws_iam_role.url_shortner_eks_cluster_role.arn
-  version  = "1.31"
+  version  = "1.34"
 
   vpc_config {
     subnet_ids = [
@@ -71,8 +71,8 @@ resource "aws_eks_node_group" "url_shortner_eks_node_group" {
   ]
 
   scaling_config {
-    desired_size = 1
-    max_size     = 2
+    desired_size = 2
+    max_size     = 3
     min_size     = 1
   }
 
